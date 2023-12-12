@@ -10,14 +10,11 @@ function addTask(){
 
 newTask.addEventListener("click",(event)=> {
         event.preventDefault();
-        if (event.style.textDecoration === "line-through") {
-        event.style.textDecoration = "none"
-        } else { 
-        event.style.textDecoration = "line-through"
+        if (li = "click") {
+            event.target.classList.add(".strike");
+            event.target.parentElement.removeChild(event.target)
         }
-        
-       
-    })
+    });
 
 
 
