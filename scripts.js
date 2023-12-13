@@ -10,16 +10,16 @@ function addTask(){
 
 newTask.addEventListener("click",(event)=> {
         event.preventDefault();
-        if (li = "click") {
             event.target.classList.add("strike")
+            setTimeout(function myFunction1(event){
+                event.target.parentElement.removeChild(event.target)
+            }, 2000, event);
             // event.target.parentElement.removeChild(event.target)
-        } 
+        
     });
     
-    setTimeout(function myFunction1(event){
-        event.target.parentElement.removeChild(event.target)
-    }); 2000;
-
+    // setTimeout(function() {myFunc("param1", "param2")}, 2000);
+    // setTimeout(myFunc, 2000, "param1", "param2");
 
 
     //THIS REMOVES BUT NO STRIKETHROUGH
